@@ -27,7 +27,7 @@ section .content{
 
 body {
   /* Location of the image */
-  background-image: url(images/blackSands_AdrienOlichon.jpg);
+  background-image: url(images/blackSandsNew.jpg);
   
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
