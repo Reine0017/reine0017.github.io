@@ -27,6 +27,7 @@ section .content{
 
 body {
   /* Location of the image */
+  /* image from unsplash by Adrien Olichon*/
   background-image: url(images/blackSandsNew.jpg);
   
   /* Image is centered vertically and horizontally at all times */
@@ -48,4 +49,10 @@ body {
   /* SHORTHAND CSS NOTATION
    * background: url(background-photo.jpg) center center cover no-repeat fixed;
    */
+}
+
+@media only screen and (max-width: 767px){
+	body{
+		background-image: url(images/blackSandsMobile.jpg);
+	}
 }
