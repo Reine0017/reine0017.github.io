@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css?fanily=Open+Sans:300,400,600,700,800&display=swap');
 
-body::after {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  content: url(images/blackSandsNew.jpg);
+/*
+body::after{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content:url(images/blackSandsNew.jpg);
 }
+*/
 
-.myimage{
+body {
   /* Location of the image */
   /* image from unsplash by Adrien Olichon*/
-  background-image: url(images/blackSandsNew.jpg);
+  background-image: url(images/blackSandsNew.jpg);*/
   
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
