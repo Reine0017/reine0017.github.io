@@ -8,3 +8,10 @@ body{
 	height: 100%;
 	background: #262626
 }
+
+.box{
+	position: relative;
+	max-width: 600px;
+	padding: 50px;
+	background: rgba(255,255,255,0.2);
+}
