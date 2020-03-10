@@ -48,6 +48,7 @@ body {
 	color: white;
 }
 
+
 .welcome-section{
 	position: absolute;
 	width: 100%;
@@ -56,6 +57,7 @@ body {
 	left:0;
 	overflow: hidden;
 }
+
 
 .content-wrap{
 	position: absolute;
@@ -75,6 +77,21 @@ body {
 	color: #fff;
 	opacity: 1;
 	transition: all 3s ease;
+}
+
+.fly-in-text li:nth-child(5){
+	margin-right: 0;
+}
+
+.enter-button{
+	display: block;
+	text-align: center;
+	font-size: 1em;
+	text-decoration: none;
+	color: #adff2f;
+	opacity: 1;
+	margin-top:30px;
+	transition: all 1s ease 3s;
 }
 
 /*@media only screen and (max-width: 767px){
