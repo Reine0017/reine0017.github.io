@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');
 
-/*font-family: 'Quicksand', sans-serif;
-font-family: 'Open Sans', sans-serif;*/
-
-/*
-body::after{
-  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-  content:url(images/blackSandsNew.jpg);
-}
-*/
-
 #preload { display: none; }
 
 body {
@@ -40,18 +30,6 @@ body {
    font-family: 'Quicksand', sans-serif;
    font-weight: 700;
 }
-
-/*
-.wrapper{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-weight: lighter;
-	font-size: 40px;
-	color: white;
-}
-*/
 
 .welcome-section{
 	position: absolute;
