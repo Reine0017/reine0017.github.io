@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Projects</title>
 		<link rel="stylesheet" type="text/css" href="proj.css">
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	</head>
 	<body>
 		<div id="preload">
@@ -23,13 +24,8 @@
 		</div>
 
 		<script type="text/javascript">
-			$(function(){
-				if (document.getElementById("textbox") != null) {
-					document.getElementById('textbox').style.visibility = 'hidden';
-					setTimeout(function() {
-						document.getElementById('textbox').style.visibility = 'visible';
-					}, 500);
-				}
+			$(document).ready(function() {
+				$('#textbox').hide().delay(3000).fadeIn(2200);
 			});
 		</script>
 	</body>
