@@ -22,10 +22,6 @@
   color:antiquewhite;
 }
 
-.content-hidden .box {
-  opacity: 0;
-}
-
 @keyframes move-background {
   from {
    -webkit-transform: translate3d(0px, 0px, 0px);

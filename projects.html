@@ -16,7 +16,7 @@
 		<!--Moon img from pngimg.com background animation resources from codepen by Anastasia Goodwin-->
 		<div class="background-container">
 			<img src="images/moon.png" alt="">
-			<div class="box content-hidden"><h1>UPDATING SOON</h1><br><br><p>They're coming :') <br> check out my projects on github tho</p></div>
+			<div class="box"><h1>UPDATING SOON</h1><br><br><p>They're coming :') <br> check out my projects on github tho</p></div>
 			<div class="stars"></div>
 			<div class="twinkling"></div>
 			<div class="clouds"></div>
@@ -24,11 +24,11 @@
 
 		<script type="text/javascript">
 			$(function(){
-				var box = $('.box');
-
-				setTimeout(function(){
-					box.removeClass('content-hidden');
-				}, 500);
+				if (document.getElementById("box") != null) {
+					setTimeout(function() {
+						document.getElementById('box').style.display = 'block';
+					}, 500);
+				}
 
 			});
 		</script>
