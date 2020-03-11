@@ -16,7 +16,7 @@
 		<!--Moon img from pngimg.com background animation resources from codepen by Anastasia Goodwin-->
 		<div class="background-container">
 			<img src="images/moon.png" alt="">
-			<div class="box"><h1>UPDATING SOON</h1><br><br><p>They're coming :') <br> check out my projects on github tho</p></div>
+			<div id="textbox" class="box textbox"><h1>UPDATING SOON</h1><br><br><p>They're coming :') <br> check out my projects on github tho</p></div>
 			<div class="stars"></div>
 			<div class="twinkling"></div>
 			<div class="clouds"></div>
@@ -24,9 +24,9 @@
 
 		<script type="text/javascript">
 			$(function(){
-				if (document.getElementById("box") != null) {
+				if (document.getElementById("textbox") != null) {
 					setTimeout(function() {
-						document.getElementById('box').style.display = 'block';
+						document.getElementById('textbox').style.display = 'block';
 					}, 500);
 				}
 
