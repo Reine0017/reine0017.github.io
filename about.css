@@ -3,7 +3,6 @@
 body{
 	margin: 0;
 	padding: 0;
-	height: 100vh;
 }
 
 #particles-js{
@@ -26,9 +25,13 @@ body{
   font-size: 48px;
   color: antiquewhite;
   font-family: 'Quicksand', sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .box p{
   color:antiquewhite;
   font-family: 'Open Sans', sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
