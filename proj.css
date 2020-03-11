@@ -16,10 +16,12 @@
   margin: 0 0 20px;
   font-size: 48px;
   color: antiquewhite;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .box p{
   color:antiquewhite;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @keyframes move-background {
