@@ -18,6 +18,8 @@ body{
 	padding: 20px;
 	left: 10%;
     top: 15%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .box h2{
@@ -25,13 +27,9 @@ body{
   font-size: 48px;
   color: antiquewhite;
   font-family: 'Quicksand', sans-serif;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 .box p{
   color:antiquewhite;
   font-family: 'Open Sans', sans-serif;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
