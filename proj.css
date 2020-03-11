@@ -5,11 +5,10 @@
   box-shadow:0 15px 35px rgba(0,0,0,0.5);
   position: relative;
   z-index: 4;
-  top: 180px;
   text-align:center;
   width: 600px;
   height: 400px;
-  margin:auto;
+  margin:0 auto;
 }
 
 .box h1{
