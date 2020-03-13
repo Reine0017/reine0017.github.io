@@ -21,6 +21,19 @@ body{
     top: 15%;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+a {
+    color: aliceblue;
+    text-decoration:underline;
+    padding: 10px;
+    display: inline-block;
+    background: rgb(240, 248, 255, 0.1);
+    margin: 4px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .box h2{

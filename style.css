@@ -73,7 +73,9 @@ body {
 	color: #d4af37;
 	opacity: 1;
 	margin-top:38px;
-	transition: all 1s ease 1s;
+	transition: all 1s ease 0.1s;
+	border-radius: 5px;
+	padding: 3px;
 }
 
 .enter-button:hover{
