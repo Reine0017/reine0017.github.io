@@ -11,6 +11,13 @@ body{
 	background: #262626;
 }
 
+button{
+	background: snow;
+	font-family: "Quicksand";
+	font-size: small;
+	opacity: 0.8;
+}
+
 .box{
 	position: absolute;
 	max-width: 50%;
@@ -39,7 +46,7 @@ a {
 .box h2{
   margin: 0 0 20px;
   font-size: 48px;
-  color: antiquewhite;
+  color: white;
   font-family: 'Quicksand', sans-serif;
 }
 

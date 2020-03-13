@@ -64,6 +64,13 @@
   right: 0;
 }
 
+button{
+  background: snow;
+  font-family: "Quicksand";
+  font-size: small;
+  opacity: 0.8;
+}
+
 .stars {
   background: black url(images/stars.png) repeat;
   position: absolute;
