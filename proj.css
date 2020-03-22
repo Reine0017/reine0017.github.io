@@ -12,6 +12,9 @@
   height: 60%;
   top:15%;
   left:25%;
+  overflow:hidden;
+  overflow-y:scroll;
+  backdrop-filter:blur(5px);
 }
 
 .box h1{
