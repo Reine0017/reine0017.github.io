@@ -13,7 +13,7 @@
   top:15%;
   left:25%;
   overflow:hidden;
-  overflow-y:scroll;
+  overflow-y:hidden;
   backdrop-filter:blur(5px);
 }
 
