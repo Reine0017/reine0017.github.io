@@ -1,5 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
+<script>try { if (sessionStorage.getItem('rf-burned') === '1') document.documentElement.classList.add('seen'); } catch (e) {}</script>
 <title>Ran Fang</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="I’m a full-stack engineer now turned AI engineer. I build stuff @ RadRatLabs.com.">
@@ -210,6 +211,11 @@
     transition-delay: calc(var(--i) * 150ms); }
   #pageB.shown .intro > * { opacity: 1; transform: none; filter: none; }
   #pageB.instant .intro > * { transition: none; }
+  /* while the page is still downloading, show bare paper rather than the night behind it */
+  html:not(.painted):not(.seen) #cover { background: linear-gradient(#f6efdf, #eddec2); }
+  /* back again this session: straight to the night, no paper flash */
+  html.seen #igniteBtn { opacity: 0; pointer-events: none; }
+  html.seen #pageB .intro > * { opacity: 1; transform: none; filter: none; transition: none; }
   #pageB .intro h1 { font-family: var(--display); font-weight: 500; font-size: clamp(3.2rem, 8vw, 5.6rem);
     line-height: 0.95; letter-spacing: -0.01em; color: var(--ivory); }
   #pageB .intro .bio { font-size: 16px; line-height: 1.7; color: rgba(236, 229, 216, 0.66); max-width: 44ch; text-wrap: balance; }
@@ -518,6 +524,7 @@ const BURN_ASSETS = {"arrival": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, paperCv);
     if (phase === 'burning' || phase === 'revealed') return; // the loop draws the next frame; a skipped cover stays gone
     drawCover(-1e6, 0);
+    document.documentElement.classList.add('painted');
   }
 
   // flames were rendered on black; give them an alpha so they also read
@@ -627,6 +634,7 @@ const BURN_ASSETS = {"arrival": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA
     cx.font = `400 15.5px "Avenir Next", "Avenir", "Helvetica Neue", sans-serif`;
     cx.fillStyle = '#6b5f49';
     cx.fillText('Ooh…Fire…', W / 2, midY + 52);
+    if (!gl) document.documentElement.classList.add('painted'); // 2D cover: already on screen
     presentCover();
   }
   // paint once now, repaint when the serif arrives
@@ -961,6 +969,7 @@ const BURN_ASSETS = {"arrival": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA
     igniteBtn.classList.remove('burning');
     igniteBtn.removeAttribute('tabindex');
     igniteBtn.removeAttribute('aria-hidden');
+    document.documentElement.classList.remove('seen');
     pageB.classList.remove('on');
     pageB.setAttribute('aria-hidden', 'true');
     if (carrying) document.body.classList.add('carrying');
